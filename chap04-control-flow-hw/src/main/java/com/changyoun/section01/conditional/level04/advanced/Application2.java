@@ -45,11 +45,11 @@ public class Application2 {
         int total = sc.nextInt();
 
         double bonus = 0.0;
-        if (salary >= 50000000) {
+        if (total >= 50000000) {
             bonus = 0.05;
-        } else if (salary >= 30000000) {
+        } else if (total >= 30000000) {
             bonus = 0.03;
-        } else if (salary >= 10000000) {
+        } else if (total >= 10000000) {
             bonus = 0.01;
         }
 
