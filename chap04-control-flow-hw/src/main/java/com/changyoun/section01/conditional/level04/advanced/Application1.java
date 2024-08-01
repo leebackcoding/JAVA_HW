@@ -30,9 +30,7 @@ public class Application1 {
         int eng = sc.nextInt();
         int sum = kor + mat + eng;
         double avg = (double) sum / 3;
-        int count = 0;
 
-        boolean flag = true; // true : 합격
         if (avg >= 60 && kor >= 40 && mat >= 40 && eng >= 40) {
             System.out.println("합격");
         } else {
