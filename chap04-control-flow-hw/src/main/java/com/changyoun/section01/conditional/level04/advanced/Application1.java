@@ -31,25 +31,17 @@ public class Application1 {
         int sum = kor + mat + eng;
         double avg = (double) sum / 3;
         int count = 0;
+
+        boolean flag = true; // true : 합격
         if (avg >= 60) {
-            if (kor < 40) {
-                System.out.println("국어 점수 미달로 불합격입니다.");
-                count++;
-            }
-            if (mat < 40) {
-                System.out.println("국어 점수 미달로 불합격입니다.");
-                count++;
-            }
-            if (eng < 40) {
-                System.out.println("국어 점수 미달로 불합격입니다.");
-                count++;
-            }
-            if (count == 0) {
-                System.out.println("합격입니다.");
-            }
-        } else {
-            System.out.println("평균 점수 미달로 불합격입니다.");
-        }
+            if(kor >= 40 && mat >= 40 && eng >= 40) System.out.println("합격");
+        } else System.out.println("평균 점수 미달로 불합격입니다.");
+
+        if (kor < 40) System.out.println("국어 점수 미달로 불합격입니다.");
+
+        if (mat < 40) System.out.println("국어 점수 미달로 불합격입니다.");
+
+        if (eng < 40) System.out.println("국어 점수 미달로 불합격입니다.");
 
     }
 }
