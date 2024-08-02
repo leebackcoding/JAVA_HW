@@ -12,7 +12,18 @@ public class Application1 {
          * */
         int[] arr = new int[6];
         for (int i = 0; i < arr.length; i++) {
-            int rand = (int) (Math.random() * 45) + 1;
+            int rand = 0;
+            lable:
+            while (true) {
+                rand = (int) (Math.random() * 45) + 1;
+                for(int n : arr){
+                    if (n == rand){
+                        continue lable;
+                    }
+                }
+                break;
+            }
+
             arr[i] = rand;
         }
 
