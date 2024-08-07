@@ -3,6 +3,7 @@ package com.changyoun.level01.basic;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Application2 {
     public static void main(String[] args) throws IOException {
@@ -20,11 +21,15 @@ public class Application2 {
          */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("문자열 입력 : ");
-        String[] str = br.readLine().split(" ");
+
+        String[] str = br.readLine().toLowerCase().replaceAll("[^a-z]+", " ").split("\\s+");
+
         String[] answer = new String[str.length];
         int idx = 0;
         String maxStr = "";
         int maxCount = 0;
+
+
 
         label:
         for (int i = 0; i < str.length; i++) {

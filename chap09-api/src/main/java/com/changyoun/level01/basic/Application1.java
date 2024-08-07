@@ -22,6 +22,7 @@ public class Application1 {
         StringBuilder sb = new StringBuilder();
         int count = s.length;
         for (String str : s) {
+            // 첫글자를 대문자로
             sb.append(Character.toUpperCase(str.charAt(0))).append(str.substring(1)).append(" ");
         }
 
