@@ -29,8 +29,6 @@ public class Application2 {
         String maxStr = "";
         int maxCount = 0;
 
-
-
         label:
         for (int i = 0; i < str.length; i++) {
             for (int k = 0; k < idx; k++) {
