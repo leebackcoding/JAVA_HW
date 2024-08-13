@@ -21,9 +21,9 @@ public class Application2 {
                 recentURL.push(url);
                 StringBuilder sb = new StringBuilder();
                 sb.append("[");
-                for (int i = 0; i < recentURL.size(); i++){
-                    sb.append(recentURL.get(recentURL.size() - 1 - i));
-                    if (i != recentURL.size() - 1){
+                for (int i = recentURL.size() - 1; i >= 0 && i >= recentURL.size() - 5; i--){
+                    sb.append(recentURL.get(i));
+                    if (i != recentURL.size() - 5 && i != 0){
                         sb.append(", ");
                     }
                 }
