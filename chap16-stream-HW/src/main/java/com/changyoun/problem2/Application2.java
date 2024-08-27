@@ -33,7 +33,8 @@ public class Application2 {
         String highestOrderCustomer = orders.stream()
                         .max(Comparator.comparingDouble(Order::getTotalAmount))
                         .map(Order::getCustomerName)
-                        .get();
+                        .get()
+                ;
 
 
         System.out.println(completedOrderIds); // 출력 예시: ["O001", "O003"]
